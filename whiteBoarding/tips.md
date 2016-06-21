@@ -4,6 +4,7 @@ Resources are the internet and the cracking the code interview book.
 
 - Understand the problem.
 - Ask if you don't understand the problem.
+- Take notes. (write them down).
 - Try a simple exmaple.
 - Always explaining what you're trying to do. Keep talking your interviewer. 
 - Focus on the algorithm and the data structure you're using. An array or and object? Why? 
