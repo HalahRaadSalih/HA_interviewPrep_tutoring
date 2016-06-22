@@ -1,6 +1,6 @@
 ## Whiteboarding Tips and Tricks For Beginners
 
-Resources are the internet and the cracking the code interview book. 
+Resources are the internet and cracking the code interview book. 
 
 - Understand the problem.
 - Ask if you don't understand the problem.
@@ -21,5 +21,5 @@ Resources are the internet and the cracking the code interview book.
 
 - Try another example,  a general one perhaps. 
 - Try a different data structure. 
-- Keep track of what you're doing, to notice what maybe leading you to be stuck and mind go all blank. 
+- Keep track of what you're doing, to notice what maybe leading you to be stuck and your mind go all blank. 
 - The more you solve problems, the more you know.
