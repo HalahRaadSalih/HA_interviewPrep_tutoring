@@ -30,17 +30,30 @@ Write a function that reverses a string.
 - Try another example, does it work? You have a working solution.
 
 ```
-function reverseString(str){
+	function reverseString(str){
 	var reversedStr = '';
-	
+		
 	for(var i = 0; i < str.length; i++){
 		reversedStr += str[str.length -1 -i];
 	}
-	
+		
 	return reversedStr;
-}
+	}
 
-reverseString('david');
+	reverseString('david');
 ```
 ### Problems with the solution
 - Using concatenation would result in a new string being created in memory upon each iteration - as strings are immutable objects.
+
+### Solution #2
+- using recursion
+
+
+```
+	function reverseString(str) {
+    return (str === '') ? '' : reverseString(str.substr(1)) + str.charAt(0);
+	}
+	
+	reverseString('david');
+
+```
