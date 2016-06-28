@@ -52,7 +52,7 @@ Do you detect the pattern here? a square root is the sum of odd conseqative numb
 .. let's try this
 
 ```
-	var isPerfectSqaure = function(num){
+var isPerfectSquare = function(num){
 	var sum = 0
 	
 	for(var i = 1; i <= num  ; i++){
@@ -66,13 +66,18 @@ Do you detect the pattern here? a square root is the sum of odd conseqative numb
 	
 	return false;
 }
+
+console.time('isPerfectSquare');
+isPerfectSquare(903868283728628525);
+console.timeEnd('isPerfectSquare');
 ```
-- Sounds legit, it works .. now try a big number? It is still slow .. we need to 
+- Sounds legit, it works .. now try a big number? It is still slow , replit crashes when we try this number.. we need to 
 
 - when sqaured number is larger than our number, then the num is not perfect sqaure and we should stop our loop.
 
 
 	```
+	var isPerfectSquare = function(num){
 	// if number is one or 0
 	if(num <=1){
 		return true
@@ -93,12 +98,17 @@ Do you detect the pattern here? a square root is the sum of odd conseqative numb
 		currentNum++;
 		//update currentSquare
 		currentSquare = currentNum * currentNum;
-	}
+		}
 	
-	return false;
+		return false;
+	}
+
+	console.time('isPerfectSquare');
+	isPerfectSquare(903868283728628525);
+	console.timeEnd('isPerfectSquare');
 	``` 
 	
 - woha! we have a solution. Try a big number? it is faster!
+- took <b>1813ms</b>
 
-let's proof that with a timer. 
 	
