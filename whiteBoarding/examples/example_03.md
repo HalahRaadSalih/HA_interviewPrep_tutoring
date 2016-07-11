@@ -83,7 +83,7 @@ console.timeEnd('isPerfectSquare');
 		return true
 	}
 
-	// next smalled square and it's number
+	// next smallest square and it's number
 	var currentSquare = 4;
 	var currentNum = 2;
 
