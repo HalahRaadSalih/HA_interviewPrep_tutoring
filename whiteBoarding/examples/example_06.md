@@ -11,3 +11,33 @@ Example: 19 is a happy number
 82 + 22 = 68
 62 + 82 = 100
 12 + 02 + 02 = 1
+
+### Solutoin
+
+```
+	var isHappy = function(n) {
+    // separate digits by converting to string first
+	// and converting string to array using split
+    var digits = n.toString().split('');
+    // initial summation of digits is zero
+    var sum = 0;
+    // loop thru the digits
+	for(var i = 0; i < digits.length; i++){
+		//convert to number, sqaure it and add them
+		sum += Math.pow(parseInt(digits[i]),2);
+ 	}
+    
+    if(sum === 4 || sum === 58 || sum === 37){
+    	return false;
+    }
+    if(sum === 1){
+    	return true
+    }
+    
+    else{
+    	return isHappy(sum);
+    }
+
+};
+
+isHappy(2);```
